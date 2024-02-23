@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import LastReleases from "./components/LastRealeases";
 import Search from "./components/Search";
 import styled from "styled-components";
 
@@ -13,6 +14,7 @@ function App() {
     <AppContainer>
       <Header />
       <Search />
+      <LastReleases />
     </AppContainer>
   );
 }
