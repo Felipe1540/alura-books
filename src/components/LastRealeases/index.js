@@ -1,5 +1,7 @@
 import { books } from "./lastRealeasesData" 
 import { Title } from "../Title"
+import RecommendsCard from "../RecommendsCard"
+import imageBook from "../../images/livro2.png"
 import styled from "styled-components"
 
 
@@ -31,6 +33,12 @@ function LastReleases() {
           <img src={book.src} />
         ))}
       </NewBooksContainer>
+      <RecommendsCard
+          title="Talvez você se interesse por"
+          subtitle="Angular 11"
+          description="Construindo uma aplicação com a plataforma Google"
+          img={imageBook}
+      />
       
     </LastReleasesContainer>
   )
