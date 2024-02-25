@@ -16,20 +16,16 @@ const Option = styled.li`
 const Options = styled.ul`
   display: flex;
 `;
-const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "ESTANTE"];
+const textoOpcoes = ["CATEGORIAS", "FAVORITES", "ESTANTE"];
 
 function OptionsHeader() {
   return (
-    <Options>
-      {textoOpcoes.map((texto) => (
-        <Link to={`/${texto.toLowerCase}`}>
-          <Option>
-            <p>{texto}</p>
-          </Option>
-        </Link>
-      ))}
+      <Options>
+          { textoOpcoes.map( (texto) => (
+              <Link to={`/${texto.toLowerCase()}`} ><Option><p>{texto}</p></Option></Link>
+          ) ) }
     </Options>
-  );
+  )
 }
 
 export default OptionsHeader;

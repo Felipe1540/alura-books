@@ -10,7 +10,7 @@ const AppContainer = styled.div`
 
 function Home() {
   return (
-    <AppContainer>
+    <AppContainer>      
       <Search />
       <LastReleases />
     </AppContainer>
